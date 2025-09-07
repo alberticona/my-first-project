@@ -180,7 +180,8 @@ html {
 	width: 100%;
 	height: var(--header-height);
 	align-content: center;
-	background-color: transparent;
+	background-color: rgb(128, 128, 128);
+	/* transparent */
 	z-index: var(--z-modal);
 	animation: navbar-scroll linear both;
 	animation-timeline: scroll(root block);
