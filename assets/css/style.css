@@ -1,4 +1,4 @@
-/*T1
+/* T1
 Metodología BEM: https://en.bem.info/methodology/quick-start/
 Generador de animaciones: https://animista.net/
 Efectos de hover para botones y enlaces: https://ianlunn.github.io/Hover/
@@ -18,8 +18,7 @@ Frontend Code con ideas geniales: https://codepen.io/
 6. BREAKPOINTS
 ==============================
   * END TABLE CONTENT *  
-==============================
-*/
+============================== */
 
 /* =================VARIABLES CSS=================== */
 :root {
@@ -27,16 +26,23 @@ Frontend Code con ideas geniales: https://codepen.io/
 	color-scheme: light dark;
 
 	/* Colors */
-	--primary-color: light-dark(#111, #ffffffcc);
-	--secondary-color: #ea4959;
-	--bg-color-section1: light-dark(#eee, #111);
-	--bg-color-section2: light-dark(#fafafa, #6a6a6a);
-	--bg-color-buttons: light-dark(#e0e0e0, #6a6a6a);
+	/* --primary-color: light-dark(#111, #ffffffcc); */
+	--primary-color: light-dark(#012a4a, #ba181b);
+	/* --secondary-color: #ea4959; */
+	--secondary-color: #ba181b;
+	/* --bg-color-section1: light-dark(#eee, #111); */
+	--bg-color-section1: light-dark(#d6cfcb, #111);
+	/* --bg-color-section2: light-dark(#fafafa, #6a6a6a); */
+	--bg-color-section2: light-dark(#ffe8d6, #6a6a6a);
+	/* --bg-color-section1: light-dark(#eee, #111);
+	--bg-color-section2: light-dark(#fafafa, #6a6a6a); */
+	--bg-color-buttons: light-dark(#ffe8d6, #ffe8d6);
 
 	/* Header */
 	--header-height: 60px;
 
 	/* Typography  T1 */
+	/* tamano de letra */
 	--normal-font-size: 16px;
 	--small-font-size: 12px;
 
@@ -193,6 +199,9 @@ html {
 			column-gap: 0.25rem;
 			font-weight: var(--font-semi-bold);
 			color: var(--primary-color);
+			&:hover {
+				color: var(--secondary-color);
+			}
 		}
 
 		.navbar__menu {
