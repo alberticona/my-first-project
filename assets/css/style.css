@@ -87,7 +87,21 @@ html {
 	}
 
 	a {
+		color: var(--primary-color);
 		text-decoration: none;
+		transition: 0.3s ease;
+		&:visited {
+			color: var(--secondary-color);
+		}
+		&:hover {
+			color: var(--secondary-color);
+		}
+		&:focus {
+			color: var(--secondary-color);
+		}
+		&:active {
+			color: var(--primary-color);
+		}
 	}
 
 	img {
@@ -102,6 +116,11 @@ html {
 	&:has([name='color-scheme']) {
 		color-scheme: light;
 	}
+}
+
+::selection {
+	background-color: #012a4a;
+	color: aliceblue;
 }
 
 /* =================REUSABLE CSS CLASSES=================== */
@@ -199,6 +218,7 @@ html {
 			column-gap: 0.25rem;
 			font-weight: var(--font-semi-bold);
 			color: var(--primary-color);
+			text-shadow: -15px 15px 0 var(--bg-color-section1);
 			&:hover {
 				color: var(--secondary-color);
 			}
