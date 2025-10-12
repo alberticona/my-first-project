@@ -29,7 +29,7 @@ Frontend Code con ideas geniales: https://codepen.io/
 	/* --primary-color: light-dark(#111, #ffffffcc); */
 	--primary-color: light-dark(#012a4a, #ba181b);
 	/* --secondary-color: #ea4959; */
-	--secondary-color: #ba181b;
+	--secondary-color: light-dark(aliceblue, #111);
 	/* --bg-color-section1: light-dark(#eee, #111); */
 	--bg-color-section1: light-dark(#d6cfcb, #111);
 	/* --bg-color-section2: light-dark(#fafafa, #6a6a6a); */
@@ -64,6 +64,7 @@ Frontend Code con ideas geniales: https://codepen.io/
 
 /* =================BASE=================== */
 html {
+	/* pa q midan lo q se les pide */
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 
@@ -116,11 +117,11 @@ html {
 	&:has([name='color-scheme']) {
 		color-scheme: light;
 	}
-}
 
-::selection {
-	background-color: #012a4a;
-	color: aliceblue;
+	::selection {
+		background-color: var(--primary-color);
+		color: var(--secondary-color);
+	}
 }
 
 /* =================REUSABLE CSS CLASSES=================== */
@@ -139,6 +140,7 @@ html {
 	padding: 0 var(--m-3);
 }
 
+/* colocar el loader en el medio de la pantalla, ademas para otros */
 .flex--container {
 	display: flex;
 	justify-content: center;
@@ -146,6 +148,7 @@ html {
 }
 
 .btn {
+	/* cajas una al lado de la otra */
 	display: inline-block;
 	padding: 1.5rem 4rem;
 	border: none;
@@ -158,13 +161,17 @@ html {
 
 	&:hover {
 		translate: 0px -4px;
-		box-shadow: 0px 3px 10px var(--secondary-color);
+		box-shadow: 0px 3px 10px var(--primary-color);
 	}
 }
 
 .btn--primary {
 	color: var(--primary-color);
 	background-color: var(--bg-color-buttons);
+	&:hover {
+		color: var(--secondary-color);
+		background-color: var(--primary-color);
+	}
 }
 
 /* =================LOADER=================== */
@@ -174,15 +181,20 @@ html {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #fff;
+	background-color: #6a6a6a;
 	z-index: 3;
 	opacity: 1;
 	visibility: visible;
 	transition: opacity 0.4s, visibility 0.4s;
 	.loader__logo {
-		color: var(--secondary-color);
-		width: 6rem;
-		animation: jump 1.1s infinite linear;
+		/* color: var(--secondary-color); */
+		/* width: 6rem; */
+		/* animation: jump 1.1s infinite linear; */
+		display: block;
+		/* margin: 100px 0 0 0; */
+		/* shorthand para animaciones  */
+		animation: run-car 3s linear infinite alternate,
+			party-car 3s linear infinite;
 	}
 }
 
@@ -191,11 +203,57 @@ html {
 	visibility: hidden;
 }
 
-@keyframes jump {
+/* Las animaciones se crean con la regla @keyframes */
+@keyframes run-car {
+	from {
+		translate: -100%;
+	}
+	to {
+		translate: 100%;
+	}
+}
+
+@keyframes party-car {
+	0% {
+		filter: drop-shadow(0px 0px 15px blueviolet);
+	}
+	10% {
+		filter: drop-shadow(0px 0px 15px rgb(43, 76, 226));
+	}
+	20% {
+		filter: drop-shadow(0px 0px 15px rgb(43, 226, 223));
+	}
+	30% {
+		filter: drop-shadow(0px 0px 15px rgb(43, 226, 104));
+	}
+	40% {
+		filter: drop-shadow(0px 0px 15px rgb(137, 226, 43));
+	}
+	50% {
+		filter: drop-shadow(0px 0px 15px rgb(217, 226, 43));
+	}
+	60% {
+		filter: drop-shadow(0px 0px 15px rgb(226, 144, 43));
+	}
+	70% {
+		filter: drop-shadow(0px 0px 15px rgb(226, 58, 43));
+	}
+	80% {
+		filter: drop-shadow(0px 0px 15px rgb(226, 43, 58));
+	}
+	90% {
+		filter: drop-shadow(0px 0px 15px rgb(226, 43, 205));
+	}
+	100% {
+		filter: drop-shadow(0px 0px 15px rgb(195, 186, 205));
+	}
+}
+
+/* @keyframes jump {
 	50% {
 		transform: translateY(-10%) scaleY(1.05);
 	}
-}
+} */
 
 /* =================HEADER & NAVBAR=================== */
 .header {
@@ -219,6 +277,7 @@ html {
 			font-weight: var(--font-semi-bold);
 			color: var(--primary-color);
 			text-shadow: -15px 15px 0 var(--bg-color-section1);
+
 			&:hover {
 				color: var(--secondary-color);
 			}

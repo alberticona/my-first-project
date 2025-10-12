@@ -5,11 +5,13 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="author" content="Albert Ticona" />
-	<meta name="description"
-		content="Ingeniero Industrial y Programador Web Full Stack. El presente portafolio contiene proyectos que muestran mis capacidades, destrezas y creatividad al momento de hacer còdigo." />
-	<meta name="keywords"
-		content="Programador, Desarrollador Web, Full Stack, Frontend, Backend, Node JS, Javascript, CSS y HTML." />
+	<meta name="description" content="Ingeniero Industrial y Programador Web 
+	Full Stack. El presente portafolio contiene proyectos que muestran mis 
+	capacidades, destrezas y creatividad al momento de hacer còdigo." />
+	<meta name="keywords" content="Programador, Desarrollador Web, Full Stack, Frontend, Backend, 
+		Node JS, Javascript, CSS y HTML." />
 	<meta name="theme-color" content="#09f" />
+
 	<!-- Iconos  -->
 	<!-- ?  T1-->
 	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -23,8 +25,11 @@
 
 	<title>Portafolio AlberTic</title>
 	<link rel="icon" href="assets/img/albertLogo.png" type="image/png" />
-	<link rel="stylesheet" href="assets/css/style.css" /> <!-- debemos vincular el css, concatenar o integrar T1-->
+
+	<!-- debemos vincular el css y js, concatenar o integrar T1-->
+	<link rel="stylesheet" href="assets/css/style.css" />
 	<script type="module" src="assets/js/main.js"></script>
+
 	<!-- Email JS -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script type="text/javascript">
@@ -39,19 +44,24 @@
 <body>
 	<!-- Loader -->
 	<div class="loader flex--container">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
+		<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
 			<path fill="currentColor"
 				d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z">
 			</path>
-		</svg>
+		</svg> -->
+		<img src="assets/img/carrito.png" alt="image/png" class="loader__logo">
 	</div>
 
 	<header class="header">
 		<nav class="navbar grid--container flex--container">
-			<a class="navbar__logo flex--container" href="#"><i class="bx bxs-registered"></i>AlberTic</a> <!-- R T1-->
+			<a class="navbar__logo flex--container" href="#"><i class="bx bxs-registered"></i>AlberTic</a>
+			<!-- <i class='bx  bx-message-circle-code'  ></i>  -->
+			<!-- "R" dentro de la etiqueta i, este es registered T1-->
+			<!-- <a class="navbar__logo flex--container" href="#">
+				<img src="assets/img/albertLogo.png" alt="logo">AlberTic</a> -->
 
 			<div id="nav" class="navbar__menu">
-				<!-- X PARA DISP MOVILES T1-->
+				<!-- "x" PARA DISP MOVILES T1-->
 				<a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
 
 
@@ -77,7 +87,8 @@
 				</ul>
 			</div>
 
-			<div class="navbar__toggles flex--container"> <!-- el check box de modo oscuro e idioma T1-->
+			<!-- el check box de modo oscuro e idioma T1-->
+			<div class="navbar__toggles flex--container">
 				<div class="navbar__toggle--darkmode flex--container">
 					<input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
 					<label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
@@ -91,6 +102,7 @@
 				</div>
 			</div>
 
+			<!-- menu amburguesa -->
 			<a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
 		</nav>
 	</header>
