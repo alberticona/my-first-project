@@ -11,3 +11,8 @@ resetToHome();
 parallax();
 activeMenu();
 sendEmail();
+
+// ****3
+// e importas loader... 32min 1er video, y lo ejecutas
+// cuando importas modulos o componenetes necesitas el .js, la func se ejecuta aqui
+// importamos pa ejecutar

@@ -18,11 +18,19 @@ Frontend Code con ideas geniales: https://codepen.io/
 6. BREAKPOINTS
 ==============================
   * END TABLE CONTENT *  
-============================== */
+==============================  */
+
+/* OJO SE ME QUITO LAS REDES A LA IZQ Q NO DESAPARECEN  */
+/* COMO HACER PA Q MUEVA LA MANO */
+/* COMPARTIO PLNTILLAS EN EL NOTION  */
+
+/* EN js debe haber dos carpetas components y helpers, components todo lo q se repite y helpers ej haces una funcion suma debeir aca */
 
 /* =================VARIABLES CSS=================== */
 :root {
-	/* Dark-mode sin JS */
+	/* Dark-mode sin JS, el esquema de color es pa agregar el modo oscuro, ya no debo usar la media query, ahora podemos usar lapropiedad color scheme
+	dependiendo de un boton, como logramos q sea escuchado sin js? me da una funcion light-dark() todos los q tengan esa variable cambian al segundo atributo en el modo
+	oscuro, usamos una seudo clase, linea 115 funcion has  */
 	color-scheme: light dark;
 
 	/* Colors */
@@ -111,6 +119,8 @@ html {
 	}
 
 	/* Darkmode function */
+	/* es ccss avanzando trbajar darkmode sin js, si tienes esto haces esto, es un selector por atributo,colocas con corchetes,  */
+	/* si elinput esta en check, tomas el color scheme dark sino el light, antes seusaba media query */
 	&:has([name='color-scheme']:checked) {
 		color-scheme: dark;
 	}
@@ -198,6 +208,7 @@ html {
 	}
 }
 
+/* pongo el loader con opacidad cero y lo escondo */
 .loader--hidden {
 	opacity: 0;
 	visibility: hidden;

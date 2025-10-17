@@ -30,12 +30,13 @@
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<script type="module" src="assets/js/main.js"></script>
 
-	<!-- Email JS -->
+	<!-- Integracion de Email JS ***6 -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function () {
 			emailjs.init({
-				publicKey: 'COLOCA TU PUBLIC_KEY',
+				// 'COLOCA TU PUBLIC_KEY'
+				publicKey: 'JFVd0CH0TgTSH34xG',
 			});
 		})();
 	</script>
@@ -43,6 +44,7 @@
 
 <body>
 	<!-- Loader -->
+	<!-- se pudo agregar una clase q manualmente oculte el loader, loader--hidden,lo ahcemos en la carpeta js en componentes ****1 -->
 	<div class="loader flex--container">
 		<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
 			<path fill="currentColor"
@@ -67,6 +69,9 @@
 
 				<ul class="navbar__list flex--container">
 					<li class="navbar__item">
+						<!-- esta claseactive es la q permite elsubrayado, se debe de manejar dinamicamentoe pa agregar a cada una
+						 cuando scrollees se subraya deacuerdo a lo q detectes en el scroll, debemos acceder al evento scroll.. **5 -->
+
 						<a class="navbar__link active" href="#home">Inicio</a>
 					</li>
 					<li class="navbar__item">
@@ -90,6 +95,7 @@
 			<!-- el check box de modo oscuro e idioma T1-->
 			<div class="navbar__toggles flex--container">
 				<div class="navbar__toggle--darkmode flex--container">
+					<!-- aca entra la func del css has -->
 					<input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
 					<label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
 						<i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
@@ -109,6 +115,7 @@
 
 	<main>
 		<section id="home" class="home"> <!-- los iconos flotantes donde esta el chico T1-->
+			<!-- cada icnoo tiene la clase home layer -->
 			<i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
 			<i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
 			<i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
