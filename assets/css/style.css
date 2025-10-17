@@ -6,9 +6,9 @@ Loaders con CSS: https://css-loaders.com/
 Sombras con CSS: https://getcssscan.com/css-box-shadow-examples
 Frontend Code con ideas geniales: https://codepen.io/
 
-<!-- guia de como se trabaja un proyecto T1 -->
+<!-- guia de como se trabaja un proyecto, T1 -->
 ==============================
-  * CSS TABLE CONTENT T1*  
+  * CSS TABLE CONTENT, T1*  
 ==============================
 1. GOOGLE FONT
 2. VARIABLES CSS
@@ -24,27 +24,29 @@ Frontend Code con ideas geniales: https://codepen.io/
 /* COMO HACER PA Q MUEVA LA MANO */
 /* COMPARTIO PLNTILLAS EN EL NOTION  */
 
-/* EN js debe haber dos carpetas components y helpers, components todo lo q se repite y helpers ej haces una funcion suma debeir aca */
+/* En js debe haber dos carpetas components y helpers, components todo lo q se repite y helpers ej haces una funcion suma, debe ir aca */
 
 /* =================VARIABLES CSS=================== */
 :root {
-	/* Dark-mode sin JS, el esquema de color es pa agregar el modo oscuro, ya no debo usar la media query, ahora podemos usar lapropiedad color scheme
-	dependiendo de un boton, como logramos q sea escuchado sin js? me da una funcion light-dark() todos los q tengan esa variable cambian al segundo atributo en el modo
-	oscuro, usamos una seudo clase, linea 115 funcion has  */
+	/* Dark-mode sin JS, el esquema de color (color-scheme) es pa agregar el modo oscuro, ya no debo usar la media query, ahora podemos usar la propiedad 
+	color scheme,	dependiendo de un boton, como logramos q sea escuchado sin js? me da una funcion light-dark() todos los q tengan esa variable cambian 
+	al segundo atributo en el modo oscuro, usamos una seudo clase, linea 121 funcion has  */
 	color-scheme: light dark;
 
 	/* Colors */
 	/* --primary-color: light-dark(#111, #ffffffcc); */
-	--primary-color: light-dark(#012a4a, #ba181b);
+	--primary-color: light-dark(#012a4a, #1cc716);
 	/* --secondary-color: #ea4959; */
-	--secondary-color: light-dark(aliceblue, #111);
+	--secondary-color: light-dark(#131a13);
+
 	/* --bg-color-section1: light-dark(#eee, #111); */
-	--bg-color-section1: light-dark(#d6cfcb, #111);
+	--bg-color-section1: light-dark(#d6cfcb, #012a4a);
 	/* --bg-color-section2: light-dark(#fafafa, #6a6a6a); */
-	--bg-color-section2: light-dark(#ffe8d6, #6a6a6a);
+	--bg-color-section2: light-dark(#0e550e, #6a6a6a);
 	/* --bg-color-section1: light-dark(#eee, #111);
 	--bg-color-section2: light-dark(#fafafa, #6a6a6a); */
-	--bg-color-buttons: light-dark(#ffe8d6, #ffe8d6);
+
+	--bg-color-buttons: light-dark(#d6cfcb, #6a6a6a);
 
 	/* Header */
 	--header-height: 60px;
@@ -119,8 +121,8 @@ html {
 	}
 
 	/* Darkmode function */
-	/* es ccss avanzando trbajar darkmode sin js, si tienes esto haces esto, es un selector por atributo,colocas con corchetes,  */
-	/* si elinput esta en check, tomas el color scheme dark sino el light, antes seusaba media query */
+	/* es css avanzando trbajar darkmode sin js, si tienes esto haces esto, es un selector por atributo,colocas con corchetes,  */
+	/* si el input esta en check, tomas el color scheme dark sino el light, antes seusaba media query */
 	&:has([name='color-scheme']:checked) {
 		color-scheme: dark;
 	}
@@ -274,8 +276,10 @@ html {
 	width: 100%;
 	height: var(--header-height);
 	align-content: center;
-	background-color: rgb(128, 128, 128);
-	/* transparent */
+	/* prof */
+	background-color: transparent;
+	/* mio */
+	/* background-color: rgb(128, 128, 128); */
 	z-index: var(--z-modal);
 	animation: navbar-scroll linear both;
 	animation-timeline: scroll(root block);

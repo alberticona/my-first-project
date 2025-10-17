@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 	<meta name="author" content="Albert Ticona" />
 	<meta name="description" content="Ingeniero Industrial y Programador Web 
 	Full Stack. El presente portafolio contiene proyectos que muestran mis 
@@ -12,18 +13,21 @@
 		Node JS, Javascript, CSS y HTML." />
 	<meta name="theme-color" content="#09f" />
 
-	<!-- Iconos  -->
+	<!-- debemos ponerlo para usar los ICONOS de boxicons  -->
 	<!-- ?  T1-->
 	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-	<!-- Fuente --> <!-- agrregar la fuente de las letras T1-->
+	<!-- FUENTE --> <!-- agrregar la fuente de las letras T1-->
+	<!-- 1. GOOGLE FONT -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet" />
 
+	<!-- va en la pestana de la pag -->
 	<title>Portafolio AlberTic</title>
+	<!-- el logo q va en la pestana -->
 	<link rel="icon" href="assets/img/albertLogo.png" type="image/png" />
 
 	<!-- debemos vincular el css y js, concatenar o integrar T1-->
@@ -43,35 +47,39 @@
 </head>
 
 <body>
-	<!-- Loader -->
-	<!-- se pudo agregar una clase q manualmente oculte el loader, loader--hidden,lo ahcemos en la carpeta js en componentes ****1 -->
 	<div class="loader flex--container">
+		<!-- LOADER -->
+		<!-- se pudo agregar una clase q manualmente oculte el loader, loader--hidden,lo ahcemos en la carpeta js en componentes ****1 -->
+
+		<!-- profe -->
 		<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
 			<path fill="currentColor"
 				d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z">
 			</path>
 		</svg> -->
+		<!-- mio -->
 		<img src="assets/img/carrito.png" alt="image/png" class="loader__logo">
 	</div>
 
 	<header class="header">
 		<nav class="navbar grid--container flex--container">
+			<!-- LOGO NAVBAR -->
+			<!-- "R" dentro de la etiqueta i, este es registered T1 (profe) -->
 			<a class="navbar__logo flex--container" href="#"><i class="bx bxs-registered"></i>AlberTic</a>
-			<!-- <i class='bx  bx-message-circle-code'  ></i>  -->
-			<!-- "R" dentro de la etiqueta i, este es registered T1-->
-			<!-- <a class="navbar__logo flex--container" href="#">
-				<img src="assets/img/albertLogo.png" alt="logo">AlberTic</a> -->
+			<!-- se probo cambiar logo x este de la misma fuente, pero no puedo ? -->
+			<!-- <i class='bx  bx-message-circle-code'></i> -->
+			<!-- (mio) -->
+			<!-- <a class="navbar__logo flex--container" href="#"><img src="assets/img/albertLogo.png" alt="logo">AlberTic</a> -->
 
 			<div id="nav" class="navbar__menu">
 				<!-- "x" PARA DISP MOVILES T1-->
 				<a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
 
-
+				<!-- PESTANAS NAVBAR -->
 				<ul class="navbar__list flex--container">
 					<li class="navbar__item">
-						<!-- esta claseactive es la q permite elsubrayado, se debe de manejar dinamicamentoe pa agregar a cada una
+						<!-- esta clase active es la q permite el subrayado, se debe de manejar dinamicamentoe pa agregar a cada una
 						 cuando scrollees se subraya deacuerdo a lo q detectes en el scroll, debemos acceder al evento scroll.. **5 -->
-
 						<a class="navbar__link active" href="#home">Inicio</a>
 					</li>
 					<li class="navbar__item">
@@ -94,6 +102,7 @@
 
 			<!-- el check box de modo oscuro e idioma T1-->
 			<div class="navbar__toggles flex--container">
+				<!-- MODO OSCURO -->
 				<div class="navbar__toggle--darkmode flex--container">
 					<!-- aca entra la func del css has -->
 					<input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
@@ -102,19 +111,22 @@
 						<i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
 					</label>
 				</div>
+				<!-- el CAMBIO DE IDIOMA esta pendiente ?-->
 				<div class="navbar__toggle--language flex--container">
 					<input type="checkbox" name="language-toggle" id="language-toggle" class="navbar__toggle--language-input" />
 					<label for="language-toggle" class="navbar__toggle--language-label"></label>
 				</div>
 			</div>
 
-			<!-- menu amburguesa -->
+			<!-- PARA DISP MOVILES - MENU AMBURGUESA -->
 			<a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
 		</nav>
 	</header>
 
 	<main>
-		<section id="home" class="home"> <!-- los iconos flotantes donde esta el chico T1-->
+		<section id="home" class="home">
+
+			<!-- los ICONOS FLOTANTES donde esta el chico T1-->
 			<!-- cada icnoo tiene la clase home layer -->
 			<i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
 			<i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
@@ -127,38 +139,45 @@
 			<i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
 			<i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
 			<i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
+
 			<div class="home__container grid--container">
+				<!-- imagen del CHICO T1 -->
 				<div class="home__image">
-					<img src="assets/img/profile.png" alt="profile photo" title="
-					Albert Ticona" />
+					<img src="assets/img/profile.png" alt="profile photo" title="Albert Ticona" />
 				</div>
 
-				<ul class="home__social flex--container"> <!-- las redes sociales dnde esta el chico T1-->
+				<!-- las REDES SOCIALES donde esta el chico T1-->
+				<!-- falta vincularlas ? -->
+				<ul class="home__social flex--container">
 					<li class="home__social-item">
 						<a class="home__social-link" href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
 					</li>
-					<!-- <li class="home__social-item">
+					<li class="home__social-item">
 						<a class="home__social-link" href="#" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-					</li> -->
+					</li>
 					<li class="home__social-item">
 						<a class="home__social-link" href="#" target="_blank"><i class="bx bxl-github"></i></a>
 					</li>
-					<!-- <li class="home__social-item">
+					<li class="home__social-item">
 						<a class="home__social-link" href="#" target="_blank"><i class="bx bx-envelope"></i></a>
-					</li> CANAL DE YOUTUBE-->
+					</li>
+					<!-- puede ir CANAL DE YOUTUBE, para anadir -->
 				</ul>
 
+				<!-- la INFORMACION de home -->
 				<div class="home__info">
+					<!-- el TIUTLO O H1, -->
 					<h1 class="home__title">Albert Ticona</h1>
-
+					<!-- DESCRIPCION -->
 					<p class="home__description">
 						Desarrollador web Full Stack. El presente portafolio contiene proyectos que muestran mis capacidades,
 						destrezas y creatividad al momento de hacer còdigo.
 					</p>
 				</div>
 
-				<div class="home__buttons"> <!-- descargar cv T1-->
-					<a class="btn btn--primary" href="assets/CV/AlbertTiconaCVes.pdf" title="Descargar CV Albert Ticona"
+				<!-- DESCARGAR CV - T1-->
+				<div class="home__buttons">
+					<a class="btn btn--primary" href="assets/CV/AlbertTiconaCVes.pdf" title="Descargar Albert Ticona CV"
 						download="Albert_Ticona_CV" rel="noreferrer nofollow">
 						Descargar CV
 					</a>
@@ -167,94 +186,106 @@
 		</section>
 
 		<section id="about" class="about section">
+			<!-- SUBTITULO -->
 			<h2 class="section__title">Acerca de Mí</h2>
 
 			<div class="about__container grid--container">
+				<!-- DESRIPCION -->
 				<p class="about__description">
 					Soy desarollador web con una profunda pasion por la tecnologia y la programacion, siempre en busca de crear
 					experiencias digitales que marquen la diferencia.
 				</p>
 
+				<!-- CARDS del chico -->
 				<div class="about__cards flex--container">
 					<!--Card 1 -->
 					<div class="about__card">
 						<img class="about__card--img" src="assets/img/me_1.jpg" alt="Laborando como ingeniero"
-							title="Laborando como ingeniero" />
+							title="Laborando como Ingeniero" />
 					</div>
 					<!--Card 2 -->
 					<div class="about__card">
 						<img class="about__card--img" src="assets/img/me_2.jpg" alt="Laborando como diseñador"
-							title="Laborando como diseñador" />
+							title="Laborando como Diseñador" />
 					</div>
 					<!--Card 3 -->
 					<div class="about__card">
 						<img class="about__card--img" src="assets/img/me_3.jpg" alt="Trabajando en equipo"
-							title="Trabajando en equipo" />
+							title="Trabajando en Equipo" />
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section id="skills" class="skills section">
+			<!-- SUBTITULO -->
 			<h2 class="section__title">Habilidades</h2>
 
 			<div class="skills__container grid--container">
+				<!-- DESCRIPCION -->
 				<p class="skills__description flex--container">
 					Mi formacion como programador Web Full Stack, Frontend, Backend, Node JS,
 					Javascript, CSS y HTML.
 				</p>
 
+				<!-- CARDS -->
 				<div class="skills__wrapper flex--container">
 					<div class="skills__cards flex--container">
-						<!--Card 1 --> <!-- son por cada proyecto -->
+
+						<!--Card 1 --> <!-- son por cada proyecto, este es html -->
 						<details class="skills__cards-container" name="moreInfo" open>
+							<!-- con ello haces los ACORDEONES con details - sammary-->
 							<summary class="skills__cards-title flex--container">
-								<!-- CON ELLLO HACE LOS ACORDEONES details - sammary-->
 								<i class="bx bxl-html5 flex--container"></i>
 							</summary>
-							<div class="skills__card-container">
-								<h3 class="skills__card-title">HTML</h3>
 
+							<div class="skills__card-container">
+								<!-- SUBTITULO -->
+								<h3 class="skills__card-title">HTML</h3>
+								<!-- DESCRIPCION -->
 								<p class="skills__card-description">
 									Lenguaje estandar utilizado para crear y reestructurar contenido de las paginas web.
 								</p>
 							</div>
 						</details>
-						<!--Card 2 -->
+
+						<!--Card 2, css-->
 						<details class="skills__cards-container" name="moreInfo">
 							<summary class="skills__cards-title flex--container">
 								<i class="bx bxl-css3 flex--container"></i>
 							</summary>
+
 							<div class="skills__card-container">
 								<h3 class="skills__card-title">CSS</h3>
-
 								<p class="skills__card-description">
 									Lenguaje de estilos que describe la presentacion de documentos estructurados en lenguajes de marcado.
 								</p>
 							</div>
 						</details>
+
 						<!--Card 3 -->
 						<details class="skills__cards-container" name="moreInfo">
 							<summary class="skills__cards-title flex--container">
 								<i class="bx bxl-javascript flex--container"></i>
 							</summary>
+
 							<div class="skills__card-container">
 								<h3 class="skills__card-title">JavaScript</h3>
-
 								<p class="skills__card-description">
 									Lenguaje de programacion que hace que las paginas web sean interactvas y dinamicas, permitiendo la
 									ejecucion de codigo en el navegador del usuario.
 								</p>
 							</div>
 						</details>
+
 						<!--Card 4 -->
 						<details class="skills__cards-container" name="moreInfo">
 							<summary class="skills__cards-title flex--container">
 								<i class="bx bxl-react flex--container"></i>
 							</summary>
+
 							<div class="skills__card-container">
 								<h3 class="skills__card-title">React</h3>
-
 								<p class="skills__card-description">
 									Creacion de interfaces de ususrio interactivas y reutiliables para aplicaciones web y moviles.
 								</p>
@@ -262,8 +293,12 @@
 						</details>
 					</div>
 				</div>
+
+				<!-- ETIQUETAS -->
 				<div class="skills__tags flex--container">
+					<!-- SUBTITULO -->
 					<h3 class="skills__tags-title">Habilidades Blandas</h3>
+					<!-- etiquetas de habilidades de habilidades blandas -->
 					<div class="skills__tags-container flex--container">
 						<span class="skills__tag">Responsable</span>
 						<span class="skills__tag">Trabajo en equipo</span>
@@ -277,21 +312,24 @@
 		</section>
 
 		<section id="projects" class="projects section">
+			<!-- SUBTITULO -->
 			<h2 class="section__title">Proyectos</h2>
 
 			<div class="projects__container grid--container">
+				<!-- PROYECTO 1 -->
 				<div class="projects__project">
 					<div class="projects__inner grid--container">
+						<!-- IMAGEN  -->
 						<div class="projects__image">
 							<img src="assets/img/project1.jpg" alt="project 1" title="Ecommerce Vanilla" />
 						</div>
-
+						<!-- DESCRIPCION -->
 						<div class="projects__info">
 							<h3 class="projects__name">Proyecto 1</h3>
 							<p class="projects__description">
 								Ecommerce Vanilla.
 							</p>
-
+							<!-- BOTONES -->
 							<div class="projects__buttons">
 								<button class="btn projects__button" type="button">
 									VER DEMO
@@ -306,6 +344,7 @@
 
 				<div class="projects__project">
 					<div class="projects__inner grid--container">
+
 						<div class="projects__image">
 							<img src="assets/img/project2.png" alt="project 1" title="Consumiendo API Pokemon con React" />
 						</div>
@@ -330,6 +369,7 @@
 
 				<div class="projects__project">
 					<div class="projects__inner grid--container">
+
 						<div class="projects__image">
 							<img src="assets/img/project3.jpg" alt="project 1" title="CRUD con React" />
 						</div>
@@ -354,6 +394,7 @@
 
 				<div class="projects__project">
 					<div class="projects__inner grid--container">
+
 						<div class="projects__image">
 							<img src="assets/img/project4.png" alt="project 1" title="Aplicación del tiempo con React" />
 						</div>
@@ -379,34 +420,43 @@
 		</section>
 
 		<section id="contact" class="contact section">
+			<!-- SUBTITULO -->
 			<h2 class="section__title">Contacto</h2>
 
 			<div class="contact__container grid--container">
+				<!-- DATOS DE TU INFORMACION -->
 				<div class="contact__info">
+					<!-- SUBTITULO -->
 					<h3 class="contact__info-title">Información de contacto</h3>
+					<!-- DESCRIPCION -->
 					<p class="contact__info-description">
 						Contactame a traves de estos medios. Ancioso por saber de ti !
 					</p>
 
-					<address class="contact__info-data"> <!-- los datos -->
+					<!-- DIRECCIONES, los datos -->
+					<address class="contact__info-data">
+						<!-- WHATSAPP -->
 						<div class="contact__info-item">
+							<!-- LOGO WHATSAPP de boxicons-->
 							<i class="bx bxl-whatsapp"></i>
-
+							<!-- LINK Y MENSAJE Q SE VA ENVIAR -->
 							<span class="contact__info-number">
+								<!-- mio -->
 								<a href="https://wa.me/+51974572426?text=Hola,%20necesito%20una%20cotización%20por%20favor."
 									target="_blank" rel="noreferrer nofollow">Enviar mensaje a WhatsApp</a>
 							</span>
-
+							<!-- profe -->
 							<!-- <span class="contact__info-number">
 								<a href="whatsapp://send?phone=+51974572426" target="_blank" rel="noreferrer nofollow">Enviar mensaje
 									app WhatsApp</a>
 							</span> -->
-
 						</div>
 
+						<!-- TELEFONO -->
 						<div class="contact__info-item">
+							<!-- LOGO TELEFONO -->
 							<i class="bx bx-phone"></i>
-
+							<!-- LNK E INFO -->
 							<span class="contact__info-number">
 								<a href="tel:+51 974 572 426" target="_blank" rel="noreferrer nofollow">
 									(+51) 974 572 426
@@ -414,9 +464,11 @@
 							</span>
 						</div>
 
+						<!-- EMAIL -->
 						<div class="contact__info-item">
+							<!-- LOGO email -->
 							<i class="bx bxs-envelope"></i>
-
+							<!-- LINK Y MENSAJE Q SE VA ENVIAR -->
 							<span class="contact__info-mail">
 								<a id="mail" href="mailto:albert.ticona@ucsp.edu.pe?subject=Por%20favor,%20necesito%20una%20cotización"
 									target="_blank" rel="noreferrer nofollow">
@@ -425,19 +477,27 @@
 							</span>
 						</div>
 
+						<!-- MAPA Y LUGAR -->
 						<div class="contact__info-item">
+							<!-- logo mapa -->
 							<i class="bx bx-map"></i>
-
+							<!-- INFORMACION  -->
 							<span class="contact__info-map"> Arequipa, Perú. </span>
 						</div>
 					</address>
 				</div>
 
-				<div class="contact__form"> <!-- el formulario -->
+				<!-- FORMULARIO -->
+				<div class="contact__form">
+					<!-- SUBTITULO -->
 					<h3 class="contact__form-title">Enviar mensaje</h3>
+					<!-- casillas del formulario -->
 					<form id="form" class="contact__form-container">
+						<!-- casilla nombre -->
 						<div class="contact__form-group">
+							<!-- nombre de casilla -->
 							<label for="name" class="contact__form-label">Nombre</label>
+							<!-- ingreso de datos -->
 							<input type="text" id="name" name="name" placeholder="Nombres y Apellidos." required
 								class="contact__form-input" />
 						</div>
@@ -448,12 +508,7 @@
 								pattern="^[a-z0-9.%_+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" class="contact__form-input" />
 						</div>
 
-						<!-- <div class="contact__form-group">
-							<label for="subject" class="contact__form-label">Asunto</label>
-							<input type="text" id="subject" name="subject" placeholder="Tema a tratar." required spellcheck="true"
-								class="contact__form-input" />
-						</div> -->
-
+						<!-- mio -->
 						<div class="contact__form-group">
 							<label for="subject" class="contact__form-label">Asunto</label>
 							<select id="subject" name="subject" required class="contact__form-input">
@@ -463,6 +518,12 @@
 								</optgroup>
 							</select>
 						</div>
+						<!-- profe -->
+						<!-- <div class="contact__form-group">
+							<label for="subject" class="contact__form-label">Asunto</label>
+							<input type="text" id="subject" name="subject" placeholder="Tema a tratar." required spellcheck="true"
+								class="contact__form-input" />
+						</div> -->
 
 						<div class="contact__form-group">
 							<label for="message" class="contact__form-label">Mensaje</label>
@@ -470,11 +531,13 @@
 								required spellcheck="true" maxlength="300" class="contact__form-input"></textarea>
 						</div>
 
+						<!-- mensaje de confirmacion, envio exitoso -->
 						<dialog class="contact__form-modal" id="modal">
 							Formulario enviado con éxito!
 							<button type="reset" id="btn_close-modal">Cerrar</button>
 						</dialog>
 
+						<!-- botones -->
 						<button type="submit" class="btn contact__form-button">Enviar</button>
 						<button type="reset" class="btn contact__form-button">Limpiar</button>
 					</form>
@@ -485,6 +548,7 @@
 
 	<footer id="redes" class="footer section">
 		<div class="footer__container grid--container">
+			<!-- INFORMACION -->
 			<div class="footer__info">
 				<h3 class="footer__title">Albert Ticona</h3>
 				<p class="footer__description">
@@ -492,36 +556,37 @@
 				</p>
 			</div>
 
+			<!-- REDES SOCIALES -->
 			<div class="footer__social">
 				<h3 class="footer__title">Redes Sociales</h3>
 
 				<ul class="footer__social-list">
+					<!-- FACEBOOK -->
 					<li class="footer__social-item">
 						<a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
 								class="bx bxl-facebook"></i></a>
 					</li>
-
+					<!-- INSTAGRAM -->
 					<li class="footer__social-item">
 						<a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
 								class="bx bxl-instagram"></i></a>
 					</li>
-
+					<!-- TWITTER -->
 					<li class="footer__social-item">
 						<a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
 								class="bx bxl-twitter"></i></a>
 					</li>
-
-					<!-- <li class="footer__social-item">
+					<!-- LINKEDIN -->
+					<li class="footer__social-item">
 						<a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
 								class="bx bxl-linkedin"></i></a>
-					</li> -->
+					</li>
 				</ul>
 			</div>
-
 		</div>
 
-		<p class="footer__copy"><span></span> Derechos Reservados &#169; &#174; &#8482; </p>
-
+		<!--DERECHOS RESERVADOS Y FECHA © es &#169, esta en date_update,js   -->
+		<p class="footer__copy"><span></span> Derechos Reservados &#174; &#8482; </p>
 	</footer>
 </body>
 
