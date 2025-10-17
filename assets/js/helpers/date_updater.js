@@ -5,7 +5,7 @@ function updateCopyrightYear() {
 
 	const copyRightElementDOM = document.querySelector('.footer__copy span');
 
-	copyRightElementDOM.textContent = `@${currentYear}`;
+	copyRightElementDOM.textContent = `©${currentYear}`;
 }
 
 export default updateCopyrightYear;
