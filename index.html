@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<meta name="author" content="Albert Ticona" />
+	<!-- No más de 165 caracteres -->
 	<meta name="description" content="Ingeniero Industrial y Programador Web 
 	Full Stack. El presente portafolio contiene proyectos que muestran mis 
 	capacidades, destrezas y creatividad al momento de hacer còdigo." />
@@ -13,12 +14,12 @@
 		Node JS, Javascript, CSS y HTML." />
 	<meta name="theme-color" content="#09f" />
 
+	<!-- Iconos  -->
 	<!-- debemos ponerlo para usar los ICONOS de boxicons  -->
-	<!-- ?  T1-->
 	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-	<!-- FUENTE --> <!-- agrregar la fuente de las letras T1-->
-	<!-- 1. GOOGLE FONT -->
+	<!-- FUENTE -->
+	<!-- GOOGLE FONT -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
@@ -30,7 +31,7 @@
 	<!-- el logo q va en la pestana -->
 	<link rel="icon" href="assets/img/albertLogo.png" type="image/png" />
 
-	<!-- debemos vincular el css y js, concatenar o integrar T1-->
+	<!-- debemos vincular el css y js, concatenar o integrar -->
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<script type="module" src="assets/js/main.js"></script>
 
@@ -49,7 +50,7 @@
 <body>
 	<div class="loader flex--container">
 		<!-- LOADER -->
-		<!-- se pudo agregar una clase q manualmente oculte el loader, loader--hidden,lo ahcemos en la carpeta js en componentes ****1 -->
+		<!-- se pudo agregar una clase q manualmente oculte el loader, loader--hidden, lo hAcemos en la carpeta js en componentes ****1 -->
 
 		<!-- profe -->
 		<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
@@ -57,6 +58,7 @@
 				d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z">
 			</path>
 		</svg> -->
+
 		<!-- mio -->
 		<img src="assets/img/carrito.png" alt="image/png" class="loader__logo">
 	</div>
@@ -64,15 +66,18 @@
 	<header class="header">
 		<nav class="navbar grid--container flex--container">
 			<!-- LOGO NAVBAR -->
-			<!-- "R" dentro de la etiqueta i, este es registered T1 (profe) -->
+			<!-- "R" dentro de la etiqueta i, este es registered, profe -->
 			<a class="navbar__logo flex--container" href="#"><i class="bx bxs-registered"></i>AlberTic</a>
 			<!-- se probo cambiar logo x este de la misma fuente, pero no puedo ? -->
 			<!-- <i class='bx  bx-message-circle-code'></i> -->
-			<!-- (mio) -->
+
+			<!-- mio -->
 			<!-- <a class="navbar__logo flex--container" href="#"><img src="assets/img/albertLogo.png" alt="logo">AlberTic</a> -->
+			<!-- <a href="assets/img/albertLogo.png"></a> -->
+			<!-- <link rel="icon" href="assets/img/albertLogo.png" type="image/png" /> -->
 
 			<div id="nav" class="navbar__menu">
-				<!-- "x" PARA DISP MOVILES T1-->
+				<!-- "x" PARA DISP MOVILES -->
 				<a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
 
 				<!-- PESTANAS NAVBAR -->
@@ -100,7 +105,7 @@
 				</ul>
 			</div>
 
-			<!-- el check box de modo oscuro e idioma T1-->
+			<!-- el check box de modo oscuro e idioma -->
 			<div class="navbar__toggles flex--container">
 				<!-- MODO OSCURO -->
 				<div class="navbar__toggle--darkmode flex--container">
@@ -126,8 +131,8 @@
 	<main>
 		<section id="home" class="home">
 
-			<!-- los ICONOS FLOTANTES donde esta el chico T1-->
-			<!-- cada icnoo tiene la clase home layer -->
+			<!-- los ICONOS FLOTANTES donde esta el chico -->
+			<!-- cada icOno tiene la clase home layer -->
 			<i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
 			<i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
 			<i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
@@ -141,33 +146,66 @@
 			<i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
 
 			<div class="home__container grid--container">
-				<!-- imagen del CHICO T1 -->
+				<!-- imagen del CHICO  -->
 				<div class="home__image">
 					<img src="assets/img/profile.png" alt="profile photo" title="Albert Ticona" />
 				</div>
 
-				<!-- las REDES SOCIALES donde esta el chico T1-->
-				<!-- falta vincularlas ? -->
+				<!-- las REDES SOCIALES donde esta el chico -->
+				<!-- falta vincularlas anchor o enlaces? -->
 				<ul class="home__social flex--container">
 					<li class="home__social-item">
+						<a class="home__social-link"
+							href="https://www.linkedin.com/in/albert-ticona-0314b8b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjEqwazI5Q6Kz8kuIrLPZIw%3D%3D"
+							target="_blank"><i class="bx bxl-linkedin"></i></a>
+					</li>
+					<!-- profe -->
+					<!-- <li class="home__social-item">
 						<a class="home__social-link" href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
-					</li>
+					</li> -->
+
+					<!-- mio -->
 					<li class="home__social-item">
+						<a class="home__social-link"
+							href="https://wa.me/+51974572426?text=Hola,%20me%20podrias%20dar%20mayor%20informacion,%20por%20favor?"
+							target="_blank"><i class="bx bxl-whatsapp"></i></a>
+					</li>
+					<!-- profe -->
+					<!-- <li class="home__social-item">
 						<a class="home__social-link" href="#" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-					</li>
+					</li> -->
+
 					<li class="home__social-item">
+						<a class="home__social-link" href="https://github.com/alberticona" target="_blank"><i
+								class="bx bxl-github"></i></a>
+					</li>
+					<!-- <li class="home__social-item">
 						<a class="home__social-link" href="#" target="_blank"><i class="bx bxl-github"></i></a>
-					</li>
+					</li> -->
+
+					<!-- MAIL, falta vincular -->
+					<!-- mio -->
 					<li class="home__social-item">
-						<a class="home__social-link" href="#" target="_blank"><i class="bx bx-envelope"></i></a>
+						<a class="home__social-link" href="#contact"><i class="bx bx-envelope"></i></a>
 					</li>
+					<!-- profe -->
+					<!-- <li class="home__social-item">
+						<a class="home__social-link" href="#" target="_blank"><i class="bx bx-envelope"></i></a>
+					</li> -->
+					<!-- mio -->
+					<!-- <li class="home__social-item">
+						<a class="home__social-link"
+							href="mailto:albert.ticona@ucsp.edu.pe?subject=Por%20favor,%20necesito%20una%20cotización"
+							target="_blank"><i class="bx bx-envelope"></i></a>
+					</li> -->
+
 					<!-- puede ir CANAL DE YOUTUBE, para anadir -->
 				</ul>
 
 				<!-- la INFORMACION de home -->
 				<div class="home__info">
 					<!-- el TIUTLO O H1, -->
-					<h1 class="home__title">Albert Ticona</h1>
+					<h1 class="home__title">Hola, soy Albert</h1>
 					<!-- DESCRIPCION -->
 					<p class="home__description">
 						Desarrollador web Full Stack. El presente portafolio contiene proyectos que muestran mis capacidades,
@@ -175,7 +213,7 @@
 					</p>
 				</div>
 
-				<!-- DESCARGAR CV - T1-->
+				<!-- DESCARGAR CV -->
 				<div class="home__buttons">
 					<a class="btn btn--primary" href="assets/CV/AlbertTiconaCVes.pdf" title="Descargar Albert Ticona CV"
 						download="Albert_Ticona_CV" rel="noreferrer nofollow">
@@ -435,6 +473,7 @@
 
 					<!-- DIRECCIONES, los datos -->
 					<address class="contact__info-data">
+
 						<!-- WHATSAPP -->
 						<div class="contact__info-item">
 							<!-- LOGO WHATSAPP de boxicons-->
@@ -452,7 +491,7 @@
 							</span> -->
 						</div>
 
-						<!-- TELEFONO -->
+						<!-- TELEFONO, falta vncular -->
 						<div class="contact__info-item">
 							<!-- LOGO TELEFONO -->
 							<i class="bx bx-phone"></i>
@@ -464,7 +503,7 @@
 							</span>
 						</div>
 
-						<!-- EMAIL -->
+						<!-- EMAIL OJO, falta vincular-->
 						<div class="contact__info-item">
 							<!-- LOGO email -->
 							<i class="bx bxs-envelope"></i>
@@ -493,6 +532,7 @@
 					<h3 class="contact__form-title">Enviar mensaje</h3>
 					<!-- casillas del formulario -->
 					<form id="form" class="contact__form-container">
+
 						<!-- casilla nombre -->
 						<div class="contact__form-group">
 							<!-- nombre de casilla -->
@@ -512,10 +552,8 @@
 						<div class="contact__form-group">
 							<label for="subject" class="contact__form-label">Asunto</label>
 							<select id="subject" name="subject" required class="contact__form-input">
-								<optgroup label="Escoge un tema">
-									<option value="quote">Hazme una cotizacion</option>
-									<option value="ask">Tengo una consulta</option>
-								</optgroup>
+								<option value="quote">Hazme una cotizacion.</option>
+								<option value="ask">Tengo una consulta.</option>
 							</select>
 						</div>
 						<!-- profe -->
@@ -538,8 +576,8 @@
 						</dialog>
 
 						<!-- botones -->
-						<button type="submit" class="btn contact__form-button">Enviar</button>
-						<button type="reset" class="btn contact__form-button">Limpiar</button>
+						<button type="submit" class="btn contact__form-button">ENVIAR</button>
+						<button type="reset" class="btn contact__form-button">LIMPIAR</button>
 					</form>
 				</div>
 			</div>
@@ -563,23 +601,28 @@
 				<ul class="footer__social-list">
 					<!-- FACEBOOK -->
 					<li class="footer__social-item">
-						<a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
-								class="bx bxl-facebook"></i></a>
+						<a class="footer__social-link" href="https://www.facebook.com/albertgiovanni.ticonacasani" target="_blank"
+							rel="noreferrer nofollow"><i class="bx bxl-facebook"></i></a>
 					</li>
 					<!-- INSTAGRAM -->
 					<li class="footer__social-item">
-						<a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
-								class="bx bxl-instagram"></i></a>
+						<a class="footer__social-link" href="https://www.instagram.com/albertgiovanniticona/" target="_blank"
+							rel="noreferrer nofollow"><i class="bx bxl-instagram"></i></a>
 					</li>
-					<!-- TWITTER -->
+					<!-- YOUTUBE, mio -->
+					<!-- <li class="footer__social-item">
+						<a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+								class='bxl  bx-youtube'></i> </a> -->
+					<!-- TWITTER, profe -->
 					<li class="footer__social-item">
 						<a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
 								class="bx bxl-twitter"></i></a>
 					</li>
 					<!-- LINKEDIN -->
 					<li class="footer__social-item">
-						<a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
-								class="bx bxl-linkedin"></i></a>
+						<a class="footer__social-link"
+							href="https://www.linkedin.com/in/albert-ticona-0314b8b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjEqwazI5Q6Kz8kuIrLPZIw%3D%3D"
+							target="_blank" rel="noreferrer nofollow"><i class="bx bxl-linkedin"></i></a>
 					</li>
 				</ul>
 			</div>
